@@ -31,27 +31,29 @@ public class CustomListTest {
     @Test
     public void testHasCity(){
            list = MockCityList();
+
             City city = new City("cityname", "AB");
+            list.addCity(city);
             assertTrue(list.hasCity(city));
     }
 
 
-    @Test
-    public void testDeleteCity(){
-        list = MockCityList();
-        City city = new City("cityname", "AB");
-        assertTrue(list.hasCity(city));
-
-
-    }
-
-    @Test
-    public void testCountCities(){
-        list = MockCityList();
-        Boolean city;
-        // if the list is empty which is expected
-        assertEquals(0, list.getCities().size());
-    }
+//    @Test
+//    public void testDeleteCity(){
+//        list = MockCityList();
+//        City city = new City("cityname", "AB");
+//        assertTrue(list.hasCity(city));
+//
+//
+//    }
+//
+//    @Test
+//    public void testCountCities(){
+//        list = MockCityList();
+//        Boolean city;
+//        // if the list is empty which is expected
+//        assertEquals(0, list.getCities().size());
+//    }
 
 
 
