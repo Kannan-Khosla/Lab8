@@ -55,9 +55,9 @@ public class CustomListTest {
     @Test
     public void testCountCities(){
         list = MockCityList();
-        Boolean city;
-        // if the list is empty which is expected
-        assertEquals(0, list.getCities().size());
+        City city = new City("cityname", "AB");
+        list.addCity(city);
+        assertEquals(1, list.countCities());
     }
 
 
