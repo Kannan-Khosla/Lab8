@@ -52,13 +52,13 @@ public class CustomListTest {
 //
 //    }
 //
-//    @Test
-//    public void testCountCities(){
-//        list = MockCityList();
-//        Boolean city;
-//        // if the list is empty which is expected
-//        assertEquals(0, list.getCities().size());
-//    }
+    @Test
+    public void testCountCities(){
+        list = MockCityList();
+        Boolean city;
+        // if the list is empty which is expected
+        assertEquals(0, list.getCities().size());
+    }
 
 
 
