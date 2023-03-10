@@ -30,23 +30,11 @@ public class CustomListTest {
 
     @Test
     public void testHasCity(){
-        list = MockCityList();
-        City city = new City("cityname", "AB");
-        assertTrue(list.hasCity(city));
-
+           list = MockCityList();
+            City city = new City("cityname", "AB");
+            assertTrue(list.hasCity(city));
     }
-//    @Test
-//
-//    public void testGetCities(){
-//        list = MockCityList();
-//        assertEquals(0,
-//                MockCityList().compareTo(list.getCities().get(0)));
-//        City city = new City("Charlottetown", "Prince Edward Island");
-//        list.add(city);
-//        assertEquals(0, city.compareTo(list.getCities().get(0)));
-//        assertEquals(0,
-//                MockCity().compareTo(list.getCities().get(1)));
-//    }
+
 
     @Test
     public void testDeleteCity(){
