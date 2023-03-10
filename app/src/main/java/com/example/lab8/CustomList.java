@@ -62,16 +62,16 @@ public class CustomList extends ArrayAdapter<City> {
         return list;
     }
     public boolean hasCity(City city){
-        return false;
+       // return false;
 
-//        return cities.contains(city);
+        return cities.contains(city);
     }
 
 
 
     public void deleteCity(City city){
-        return;
-        //cities.remove(city);
+//        return;
+        cities.remove(city);
 
 
 
@@ -83,7 +83,7 @@ public class CustomList extends ArrayAdapter<City> {
      * size of the city
      */
     public int countCities(){
-        return 100;
+        return cities.size();
     }
 }
 
